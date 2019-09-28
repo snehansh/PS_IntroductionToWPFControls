@@ -1,0 +1,23 @@
+﻿<Window x:Class="CRCWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cc="clr-namespace:CRCWpfCustomControlLibrary;assembly=CRCWpfCustomControlLibrary"
+        xmlns:local="clr-namespace:CRCWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <cc:MyCustomControl Margin="0,10,0,0" 
+                            x:Name="_ctrl1" />
+        <cc:MyCustomControl x:Name="_ctrl2" />
+        <Button Content="Update Something"
+                Click="Button_Click" />
+    </StackPanel>
+</Window>
+
+
+<!--<Button Content="Update Something"
+                Command="{x:Static cc:ControlCommands.UpdateTextCommand}"
+                CommandParameter="Updated from View"
+                CommandTarget="{Binding ElementName=_ctrl1}" />-->

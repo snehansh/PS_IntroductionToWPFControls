@@ -1,0 +1,21 @@
+﻿<Window x:Class="ItemsControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ItemsControlDemo"
+        xmlns:cc="clr-namespace:ItemsControlLib;assembly=ItemsControlLib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <cc:MyItemsControl>
+            <TextBlock>A</TextBlock>
+            <TextBlock>A</TextBlock>
+            <TextBlock>A</TextBlock>
+            <TextBlock>A</TextBlock>
+            <TextBlock>A</TextBlock>
+            <TextBlock>A</TextBlock>
+            <TextBlock>A</TextBlock>
+        </cc:MyItemsControl>
+    </Grid>
+</Window>
